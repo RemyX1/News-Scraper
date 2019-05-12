@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <title>Scraping With Mongoose</title>
+  
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <button onclick="window.location.href = '/'" class="btn btn-outline-success" type="button">Home</button>
+      <button class="btn btn-outline-success" id="scrape" type="button">Scrape New Articles</button>
+      <button class="btn btn-outline-success" id="goToArticles" type="button">Save Articles</button>
+      <!-- <button class="btn btn-sm btn-outline-secondary" type="button">Save Articles</button> -->
+    </form>
+  </nav>
+
+ 
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Article Name</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody id="news">
+
+    </tbody>
+  </table>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
